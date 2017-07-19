@@ -56,41 +56,46 @@
         border-radius: 50%;
         display: block;
         margin: auto;
-        
+
       }
-      
+
       p {
         font-family: "Lucida Sans Unicode", "Lucida Grande", sans serif;
         font-size: 100%;
         margin-left: 150px;
         margin-right: 150px;
         font-family: "Verdana", Geneva, sans-serif
-      }</style>
+      }
+    </style>
+    
     <title>Hello, my name is...</title>
   </head>
   <body>
     <div id="background">
-    <h1>Hello, my name is...</h1>
-    <h2>...Catherine, if you were wondering.</h2>
-      <button onmouseover="myFunction()">Button</button>
+      <h1>Hello, my name is...</h1>
+      <h2>...Catherine, if you were wondering.</h2>
+      <button onclick="myFunction()">Button</button>
+      <img onmouseover="myImageUnusual" onmouseout="myImageNormal" border="0" src="smiley.gif" alt="Smiley" width="32" height="32">
+      
+      <img onmouseover="myImageUnusual(this)" onmouseout="myImageNormal(this)" border="0" src="https://raw.githubusercontent.com/caluong1/nightclove/master/149852359375667_zpsedr4wgdv.jpg" alt=" Image of Catherine" width="130" height="130">
+      
       <script>
+        function myImageUnusual(x) {
+          x.style.height = "200px";
+          x.style.width = "200px";
+        }
+
+        function myImageNormal(x) {
+          x.style.height = "100px";
+          x.style.width = "100px";
+        }
         function myFunction() {
           alert("Hey.  I see you looking at my page.  Smart choice.");
         }
       </script>
-      
-      <img onmouseover="myImageUnusual" onmouseout="myImageNormal" border="0" src="smiley.gif" alt="Smiley" width="32" height="32">
-      
-      <img scr = "https://raw.githubusercontent.com/caluong1/nightclove/master/149852359375667_zpsedr4wgdv.jpg" = "myImage">
-      </img scr>
-      
-      <a href="https://raw.githubusercontent.com/caluong1/nightclove/master/149852359375667_zpsedr4wgdv.jpg" target="_blank"><img src="https://raw.githubusercontent.com/caluong1/nightclove/master/149852359375667_zpsedr4wgdv.jpg" border="0" alt=" Image of Catherine"/></a>
     <h3>Biography of Catherine the Girl</h3><p>Long, long ago, there was a girl that was born.  Her life is still in development, so the rest is unclear.</p>
 
-      <script>
-        <image onmouseover
-      </script>
-      
+
     <h4>Likes</h4>
     <p>+ curry <br>+ acting <br>+ hardcover books <br>+ writing stories <br>+ pretty much any type of music</p>
 
@@ -102,13 +107,13 @@
 
     <h7><strong>SCRATCH </strong></h7>
 
-      <a href="https://raw.githubusercontent.com/caluong1/nightclove/master/image.png" ><img src="https://raw.githubusercontent.com/caluong1/nightclove/master/image.png" alt=" Scratch side scroller game"/></a>
+    <a href="https://raw.githubusercontent.com/caluong1/nightclove/master/image.png" ><img src="https://raw.githubusercontent.com/caluong1/nightclove/master/image.png" alt=" Scratch side scroller game"/></a>
     <p>Fish are disgustingly dangerous creatures and must be avoided at all costs.  You, a brave scuba diver, have volunteered to swim amongst such horrible monsters and take their most wonderful pearl away from them!</p>
-      <h8>Favorite Links (or something)</h8>
-      <p>
-        * <a href="https://www.yuumeiart.com/">An artist I admire</a><br>
-        * <a href="https://satwcomic.com/the-world">Something new I've discovered (webcomic)</a><br>
-</p>
+    <h8>Favorite Links (or something)</h8>
+    <p>
+      * <a href="https://www.yuumeiart.com/">An artist I admire</a><br>
+      * <a href="https://satwcomic.com/the-world">Something new I've discovered (webcomic)</a><br>
+    </p>
     </div>
   </body>
 </html>
